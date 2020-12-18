@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+  overflow-x:hidden;
+  color:#FFF;
+  font-family:Helvetica;
+  font-size:200%;
+}
+#page {
+  overflow:hidden;
+  white-space:nowrap;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#CCC;
+  display:flex;
+  flex-wrap:no-wrap;
+}
+.pane {
+  flex:0 0 100vw;
+  height:100vh;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  background-color: #45CCFF;
+}
+
+.pane:nth-child(4n+2)  {
+  background-color: #E84B30;
+}
+.pane:nth-child(4n+3)  {
+  /*background-color: #49E83E;*/
+  background-color: #FFFFFF;
+}
+.pane:nth-child(4n+4)  {
+  background-color: #EDDE05;
+}
+.pane:last-child {
+  background-color: #45CCFF;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#big-text {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
+  color: #F5C43C;
+  position: absolute;
+  top: 20.5%;
+  left: 35px;
+  font-smoothing: antialiased;
+  letter-spacing: -1.1px;
+  text-transform: uppercase;
+  min-width: 700px;
+}
+
+#big-text-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #DBAD2E;
+  position: absolute;
+  top: 45.5%;
+  left: 36px;
+  margin-top: 30px;
+  font-smoothing: antialiased;
+  letter-spacing: -1.1px;
+  text-transform: uppercase;
+  min-width: 710px;
+}
+
+.txt {
+    display: block; /* or inline-block, at least its a block element */
+    font-size: 15px;
+    width: 1100px; /* or width is certain by parent element */
+    height: 500px; /* height cannot be defined */
+    /*word-break: break-all;*/ /*  */
+    /*word-wrap: break-word;*/ /* if you want to cut the complete word */
+    white-space: normal; /* be sur$("#includedContent").load("Demo-net/main.html");e its not 'nowrap'! ! ! :/ */
+    text-align: justify;
+}
